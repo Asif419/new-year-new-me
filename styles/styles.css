@@ -178,15 +178,20 @@ footer .container h3 {
     font-weight: 600;
     margin-top: 2vh;
 }
-    
-
 
 
 /* ------------------- */
 
 
+
 /* media query */
 @media only screen and (max-width: 576px) {
+
+    body h1 {
+        font-weight: 400;
+        font-size: 45px;
+        color: #151414;
+    }
 
     /* header */
     .banner .container {
@@ -267,6 +272,7 @@ footer .container h3 {
     footer {
         margin-top: 10vh;
     }
+
     footer .container {
         padding: 3vh;
         color: #FFFFFF;
@@ -280,13 +286,8 @@ footer .container h3 {
     .footer-details {
         padding-right: 0;
     }
-    
+
     .footer-future-icons img {
         width: 10%;
     }
-
-    .hide {
-        display: none;
-    }
-
 }
