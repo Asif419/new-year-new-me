@@ -1,0 +1,134 @@
+/* declare variable */
+:root {
+    --main-bg-color: #F15B22;
+}
+
+/* overall css */
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.btn-primary {
+    width: 160px;
+    height: 64px;
+    background-color: var(--main-bg-color);
+    border-radius: 10px;
+    color: #FFFFFF;
+    border: none;
+    font-size: 1.1rem;
+    line-height: 1rem;
+    font-weight: 600;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 76px;
+    color: #151414;
+}
+
+p {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+/* header section */
+.banner {
+    background-image: url(../images/banner/banner2.png);
+    background-repeat: no-repeat;
+    background-position: left 50%;
+    width: 100%;
+}
+
+.banner .container {
+    text-align: end;
+    padding: 20vh 20vh 20vh 110vh;
+
+}
+
+/* main section */
+.failure .container {
+    padding: 15vh 25vh 25vh 25vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2vh;
+}
+
+.failure-picture {
+    display: flex;
+    justify-content: end;
+}
+
+.failure-picture img {
+    width: 70%;
+}
+
+.failure-details {
+    padding-right: 15vh;
+}
+
+.failure-detailes-points div {
+    display: flex;
+    align-items: center;
+    gap: 1.2vh;
+}
+
+
+
+/* ------------------- */
+
+
+/* media query */
+@media only screen and (max-width: 576px) {
+
+    /* header */
+    .banner .container {
+        text-align: end;
+        padding: 20vh 20vh 20vh 110vh;
+    }
+
+    .banner {
+        background-image: url(../images/banner/banner2.png) center;
+        background-position: center 50%;
+    }
+
+    .banner .container {
+        text-align: end;
+        padding: 5vh;
+
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 76px;
+        color: #151414;
+    }
+
+    /* main */
+    .failure .container {
+        padding: 1vh;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        gap: 2vh;
+    }
+
+    .failure-picture {
+        display: flex;
+        justify-content: center;
+    }
+    .failure-details {
+        padding: 2vh;
+        text-align: center;
+    }
+
+    .failure-detailes-points {
+        display: grid;
+        place-items: center;
+    }
+}
